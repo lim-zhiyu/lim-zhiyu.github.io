@@ -1,0 +1,137 @@
+/*
+Colour palette:
+https://colorhunt.co/palette/b1b2ffaac4ffd2daffeef1ff
+#EEF1FF
+#D2DAFF
+#AAC4FF
+#B1B2FF
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgba(238, 241, 255, 0.97);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+header > h1 {
+    margin: auto 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    margin: 0 15px;
+    font-size: 1.5rem;
+}
+
+.navigation-button:link {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-button:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-button:hover {
+    text-decoration: none;
+    color: darkgrey;
+    transition: 0.18s;
+}
+
+.navigation-button:active {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    justify-content: center;
+}
+
+.project-container {
+    margin: 20px;
+    border: 2px solid #B1B2FF;
+    border-radius: 10px;
+    max-width: 800px;
+    min-width: 500px;
+    flex-basis: 650px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    padding: 15px;
+}
+
+.project-description,.project-link,.project-technologies {
+    padding: 10px;
+    margin: 0;
+}
+
+.project-link > a {
+    margin-right: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-links-container {
+    display: flex;
+    max-width: 768px;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-link > a {
+    text-decoration: none;
+    color: black;
+}
+
