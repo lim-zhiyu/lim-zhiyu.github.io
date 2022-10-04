@@ -83,7 +83,7 @@ h2 {
 .project-container {
     margin: 20px;
     border: 2px solid #B1B2FF;
-    border-radius: 10px;
+    background-color: rgba(238, 241, 255, 0.97);
     max-width: 800px;
     min-width: 500px;
     flex-basis: 650px;
@@ -135,3 +135,22 @@ img {
     color: black;
 }
 
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    background-color: rgba(238, 241, 255, 0.97);
+    width: 100%;
+}
+
+.contact-page-footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    background-color: rgba(238, 241, 255, 0.97);
+    width: 100%;
+}
