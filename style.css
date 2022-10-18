@@ -1,24 +1,66 @@
 /*
-Colour palette:
-https://colorhunt.co/palette/b1b2ffaac4ffd2daffeef1ff
-#EEF1FF
-#D2DAFF
-#AAC4FF
-#B1B2FF
+TODO
+- [Done] Fix URL colour in nav and project containers in dark mode.
+- [Done] Add dark mode to contact page.
+- [Done] Add dark mode toggle button.
+- [Done] Make dark mode persist across pages.
+- Remove the flashing when going to a different page in dark mode.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
+body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-}
+    background-color: rgb(219,245,255);
+  
+    
+   
+      
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    
+  
+    
+    
+  }
+  .night{
+    background-color: rgb(0,30,41);
+    color: white;
+  }
+
+  .dntoggle{
+    font-size: 28px;
+    border-radius: 100px;
+    background-color: #111111;
+    padding: 15px;
+    color:#fcfcfc;
+    box-shadow: 1px 2px 6px rgba(0,0,0,.3);
+    cursor: pointer;
+    
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    z-index: 10;
+  
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .fa-moon-o:before{
+    padding:0 2px;
+  }
+  .fa-sun-o{
+    background-color: #212121;
+    color:#ccc;
+  }
 
 header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: rgba(238, 241, 255, 0.97);
+    background-color: rgba(157, 229, 255, 0.97);
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,14 +89,17 @@ nav > ul > li {
     font-size: 1.5rem;
 }
 
+li > a {
+    color: black;
+}
+
+
 .navigation-button:link {
     text-decoration: none;
-    color: black;
 }
 
 .navigation-button:visited {
     text-decoration: none;
-    color: black;
 }
 
 .navigation-button:hover {
@@ -86,8 +131,8 @@ h2 {
 
 .project-container {
     margin: 20px;
-    border: 2px solid #B1B2FF;
-    background-color: rgba(238, 241, 255, 0.97);
+    border: 2px solid #ff9ee5;
+    background-color: rgba(157, 229, 255, 0.97);
     max-width: 800px;
     min-width: 500px;
     flex-basis: 650px;
@@ -113,6 +158,17 @@ img {
 
 .project-link > a {
     margin-right: 20px;
+    border: 1px solid #ff9ee5;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #9effb8;
+    text-decoration: none;
+}
+
+.project-link > a:hover {
+    background-color: #bdffce;
+    transition: 0.18s;
+    text-decoration: underline;
 }
 
 .logo {
@@ -132,11 +188,8 @@ img {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-.contact-link > a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 footer {
@@ -146,6 +199,34 @@ footer {
     text-align: center;
     padding: 10px 0;
     font-size: 0.8rem;
-    background-color: rgba(238, 241, 255, 0.97);
+    background-color: rgba(157, 229, 255, 0.97);
     width: 100%;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: rgb(0,30,41);
+    color: white;
+  }
+
+.dark-mode-header {
+    background-color: rgba(0,61,83,0.97);
+}
+
+.dark-mode-project-containers {
+    background-color: rgb(0,61,83);
+    border: 2px solid #ff9ee5;
+}
+
+.dark-mode-footer {
+    background-color: rgba(0,61,83,0.97);
+    color: white;
+}
+
+.dark-mode-nav-list-items {
+    color: white;
+}
+
+.dark-mode-contact-links {
+    color: white;
 }
