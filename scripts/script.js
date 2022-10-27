@@ -16,6 +16,7 @@ if ($("body").hasClass("night")) {
     $('#githubLogo').attr("src", "img/logo/github-dark-mode.png");
     $('#gmailLogo').attr("src", "img/logo/gmail-dark-mode.png");
     $('.contact-link').addClass('dark-mode-contact-links');
+    $('.home-button').addClass('dark-mode-home-button');
 
 } else {
     // Light mode
@@ -33,6 +34,7 @@ if ($("body").hasClass("night")) {
     $('#githubLogo').attr("src", "img/logo/github.svg");
     $('#gmailLogo').attr("src", "img/logo/gmail.svg");
     $('.contact-link').removeClass('dark-mode-contact-links');
+    $('.home-button').removeClass('dark-mode-home-button');
 }
 
 $('.dntoggle').click(function() {
@@ -53,6 +55,7 @@ $('.dntoggle').click(function() {
         $('#githubLogo').attr("src", "img/logo/github.svg");
         $('#gmailLogo').attr("src", "img/logo/gmail.svg");
         $('.contact-link').removeClass('dark-mode-contact-links');
+        $('.home-button').removeClass('dark-mode-home-button');
         localStorage.removeItem('currentTheme');
         localStorage.currentTheme = "day";
         theme = window.localStorage.currentTheme;
@@ -68,6 +71,7 @@ $('.dntoggle').click(function() {
         $('#githubLogo').attr("src", "img/logo/github-dark-mode.png");
         $('#gmailLogo').attr("src", "img/logo/gmail-dark-mode.png");
         $('.contact-link').addClass('dark-mode-contact-links');
+        $('.home-button').addClass('dark-mode-home-button');
         localStorage.removeItem('currentTheme');
         localStorage.currentTheme = "night";
         theme = window.localStorage.currentTheme;
