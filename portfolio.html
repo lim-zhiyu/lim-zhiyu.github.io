@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lim Zhi Yu's Portfolio | Projects</title>
+        <link href="styles/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="libraries/font-awesome/4.6.3/css/font-awesome.min.css">
+        
+    </head>
+    
+    
+    <body>
+        <div class="dntoggle fa fa-moon-o"></div>
+        <header>
+            <h1><a class="home-button" href="index.html">L</a></h1>
+            <nav>
+                <ul>
+                    <li><a class="navigation-button" href="about.html">About</a></li>
+                    <li><a class="navigation-button" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="navigation-button" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h2>Portfolio</h2>
+            <div class="cards-container">
+                <div id="cards">
+                    <div class="card">
+                        <div class="card-border"></div>
+                        <div class="card-content">
+                            <div class="card-img-container">
+                                <img class="card-img" src="img/project-images/msl.png">
+                            </div>
+                            <div class="project-name">
+                                <h3>Malaysian Sign Language Fingerspelling Real-Time Recognition</h3>
+                            </div>
+                            <div class="technologies">
+                                <ul>
+                                    <li>TensorFlow</li>
+                                    <li>MediaPipe</li>
+                                    <li>LSTM Neural Network</li>
+                                    <li>OpenCV</li>
+                                    <li>Flask</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="links">
+                            <a class="button" href="https://github.com/lim-zhiyu/MSL-Fingerspelling-Recognition-System">CODE</a>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-border"></div>
+                        <div class="card-content">
+                            <div class="card-img-container">
+                                <img class="card-img" src="img/project-images/responsive-club-website.png">
+                            </div>
+                            <div class="project-name">
+                                <h3>Responsive Club Website</h3>
+                            </div>
+                            <div class="technologies">
+                                <ul>
+                                    <li>CSS Flexbox</li>
+                                    <li>CSS Media Queries</li>
+                                    <li>GitHub Pages</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="links">
+                            <a class="button" href="https://github.com/lim-zhiyu/Responsive-Club-Website">CODE</a>
+                            <a class="button" href="https://lim-zhiyu.github.io/Responsive-Club-Website/">VIEW</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-border"></div>
+                        <div class="card-content">
+                            <div class="card-img-container">
+                                <img class="card-img" src="img/project-images/educational-game.png">
+                            </div>
+                            <div class="project-name">
+                                <h3>Educational Video Game</h3>
+                            </div>
+                            <div class="technologies">
+                                <ul>
+                                    <li>Unreal Engine 4</li>
+                                    <li>C++</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="password">Password: biologygame</div>
+                        <div class="links">
+                            <a class="button" href="https://www.dropbox.com/s/qg96nr4kccakfk2/WindowsNoEditor.zip?dl=0">DOWNLOAD</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            Designed and Built by Lim Zhi Yu
+        </footer>
+        <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script>
+        document.getElementById("cards").onmousemove = e => {
+            for(const card of document.getElementsByClassName("card")) {
+                const rect = card.getBoundingClientRect(),
+                x = e.clientX - rect.left,
+                y = e.clientY - rect.top;
+
+            card.style.setProperty("--mouse-x", `${x}px`);
+            card.style.setProperty("--mouse-y", `${y}px`);
+            }
+        }
+        </script>
+    </body>
+</html>
