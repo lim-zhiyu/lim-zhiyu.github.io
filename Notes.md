@@ -1,5 +1,5 @@
 TODOs
-- Finish up Home and About page.
+- [Done] Finish up Home and About page.
 - [Done] Add Home and About page to nav bar.
 - Replace the 'L' with an icon.
 - Make nav items just icons in mobile view.
